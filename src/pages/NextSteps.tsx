@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Mail, Phone, Calendar, Heart, ArrowRight, MessageCircle, CheckCircle2, Clock } from 'lucide-react';
 
 export default function NextSteps() {
@@ -107,13 +108,13 @@ export default function NextSteps() {
             Let's start a conversation about how I can help your loved one
           </p>
           <div className="flex justify-center space-x-4">
-            <a
-              href="mailto:beth.diprose@gmail.com"
+            <Link
+              to="/contact"
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50"
             >
               Contact Now
               <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
